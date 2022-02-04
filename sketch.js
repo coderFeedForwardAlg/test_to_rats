@@ -1,5 +1,6 @@
 
 
+
 	var myVoice = new p5.Speech(); // new P5.Speech object
 
 	var listbutton; // button
@@ -20,6 +21,11 @@
     myVoice.setRate(0.9);
 
 	}
+
+
+  function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
 
 	function draw()
 	{
@@ -66,3 +72,4 @@
       myVoice.speak(str);
     }
 }
+
